@@ -1,4 +1,4 @@
-package com.gigledger.gigledger_api;
+package com.gigledger.gigledgerapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
