@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: gigledger-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: gigledger
+      POSTGRES_USER: gigledger
+      POSTGRES_PASSWORD: gigledger
+    volumes:
+      - gigledger-data:/var/lib/postgresql/data
+
+volumes:
+  gigledger-data:

@@ -1,3 +1,13 @@
 spring:
   application:
     name: gigledger-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gigledger
+    username: gigledger
+    password: gigledger
+  jpa:
+    hibernate:
+      # tell hibernate to check entities match db schema but don't create or modify tables - flyaway will do this
+      ddl-auto: validate
+  flyway:
+    enabled: true
